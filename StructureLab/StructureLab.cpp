@@ -18,5 +18,10 @@ Car info(short sh, string str, int num)
 
 int main()
 {
-
+	short id = 1;
+	string model = "Lamborgini";
+	int year = 2011;
+	auto car = info(id, model, year);
+	cout << "ID: " << car.id << ", Model: " << car.model << ", Year: " << car.year << endl;
+	return 0;
 }
