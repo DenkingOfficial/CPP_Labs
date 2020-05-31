@@ -12,4 +12,4 @@ private:
 	int cond[size][size];
 };
 
-#endif // !MATRIX2D_H
+#endif

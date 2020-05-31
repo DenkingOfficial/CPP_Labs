@@ -1,7 +1,6 @@
 #include "MatrixBase.h"
 #include <string>
 #include <cassert>
-using namespace std;
 
 void MatrixBase::operator*=(int iMult)
 {
@@ -17,13 +16,13 @@ void MatrixBase::operator+=(MatrixBase& iAdd)
 			element(x, y) += iAdd.element(x, y);
 }
 
-ostream& operator<<(ostream& out, const MatrixBase& iMatrix)
+std::ostream& operator<<(std::ostream& out, const MatrixBase& iMatrix)
 {
 	for (int x = 0; x < iMatrix.size(); x++)
 	{
 		for (int y = 0; y < iMatrix.size(); y++)
 			out << iMatrix.element(x, y) << ' ';
-		out << endl;
+		out << std::endl;
 	}
 	return out;
 }
