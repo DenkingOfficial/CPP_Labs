@@ -12,7 +12,10 @@ struct Car
 
 Car info(short sh, string str, int num)
 {
-	Car car = { sh, str, num };
+	Car car;
+	car.id = sh;
+	car.model = str;
+	car.year = num;
 	return car;
 }
 
